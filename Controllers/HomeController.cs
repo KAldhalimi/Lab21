@@ -32,10 +32,18 @@ namespace ASPPractice1.Controllers
         {
             return View();
         }
-        public ActionResult AddUser(Registration u)
+        public ActionResult WelcomeUser(Registration u)
         {
             ViewBag.FirstName = u.FirstName;
+            ViewBag.LastName = u.LastName;
             return View();
         }
+        public ActionResult Results(Registration u)
+        {
+            ViewBag.FirstName = u.FirstName;
+            ViewBag.LastName = u.LastName;
+            return View();
+        }
+
     }
 }

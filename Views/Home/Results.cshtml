@@ -11,15 +11,12 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            First Name:
+            First Name: @ViewBag.FirstName
         </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-
+        
         <dt>
-            Last Name:
+            Last Name: @ViewBag.LastName
         </dt>
 
         <dd>
@@ -55,4 +52,5 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Next Page", "WelcomeUser")
 </p>
